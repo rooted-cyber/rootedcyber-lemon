@@ -1,3 +1,12 @@
+pd{} {
+random
+printf "login details:\n\n\n\n"
+random
+printf "Username :\033[0m admin\n\n"
+random
+printf "Password :\033[0m rootedcyber\n\n"
+exit
+}
 ban() {
 echo -e "\033[1;92m"
 toilet -f font lemon
@@ -7,6 +16,7 @@ lis() {
 cd /bin
 if [ -e lemon ];then
 random
+pd
 printf "\n Already install\n Now start......\n\n"
 lemon
 else
@@ -19,6 +29,7 @@ chmod 755 lemon
 sleep 1
 random
 printf "\n installed successfully\n\n Now run\033[0m lemon\n\n"
+pd
 fi
 }
 hash() {
