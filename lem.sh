@@ -1,4 +1,4 @@
-pd{} {
+pd() {
 random
 printf "login details:\n\n\n\n"
 random
@@ -61,3 +61,4 @@ case $b in
 *)menu ;;
 esac
 }
+menu
