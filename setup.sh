@@ -6,7 +6,7 @@ exit
 fi
 }
 cd se() {
-	sudo apt install figlet toilet apktool wget curl git npm nano nodejs openjdk-8-jdk openjdk-8-jre python3 python3-pip -y
+	sudo apt install openssl figlet toilet apktool wget curl git npm nano nodejs openjdk-8-jdk openjdk-8-jre python3 python3-pip -y
 	cd files
 	dpkg -i *deb
 	cd ~
