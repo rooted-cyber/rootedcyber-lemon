@@ -1,4 +1,11 @@
-se() {
+ch() {
+cd /
+if [ -e system ];then
+printf "\n\033[1;91m Not in Termux !!! \n\n"
+exit
+fi
+}
+cd se() {
 	sudo apt install figlet toilet apktool wget curl git npm nano nodejs openjdk-8-jdk openjdk-8-jre python3 python3-pip -y
 	cd files
 	dpkg -i *deb
@@ -14,4 +21,5 @@ se() {
 	cd ~
 	source <(curl -fsSL https://raw.githubusercontent.com/efxtv/npm/main/apktool/apktool-kali-ubuntu.sh)
 }
+ch
 se
